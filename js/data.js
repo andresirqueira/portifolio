@@ -57,7 +57,7 @@ const PORTFOLIO_DATA = {
   ],
 
   technicalNote:
-    "Todo o ecossistema de scripts foi desenvolvido para execução em ambiente local inicialmente.",
+    "Todo o ecossistema de scripts de soluções profissionais foi desenvolvido para execução em ambiente local inicialmente.",
 
   locations: [
     { code: "SP", label: "São Paulo" },

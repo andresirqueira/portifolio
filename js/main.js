@@ -546,9 +546,6 @@
 
   // ---- Footer ----
   document.getElementById("footerNote").textContent = data.technicalNote;
-  document.getElementById("footerName").textContent = data.profile.name;
-  document.getElementById("footerYear").textContent =
-    `Realizações AV · ${new Date().getFullYear()}`;
 
   // ---- Nav mobile ----
   const navToggle = document.getElementById("navToggle");
