@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de realizações AV — André Luiz Cardoso Sirqueira" />
+  <title>Realizações AV | André Sirqueira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">AS<span class="accent">.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#realizacoes">Realizações</a></li>
+        <li><a href="#projetos-profissionais">Projetos</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero about" id="sobre">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container about__container">
+        <div class="about-intro reveal">
+          <div class="about-photo" id="aboutPhoto" aria-label="Foto pessoal"></div>
+          <div class="about-intro__text">
+            <h1 class="hero__title" id="heroName"></h1>
+            <p class="hero__role" id="heroRole"></p>
+            <p class="hero__tagline" id="heroTagline"></p>
+            <div class="about-social" id="aboutSocial" aria-label="Contato"></div>
+          </div>
+        </div>
+        <div class="about-details" id="aboutDetails"></div>
+      </div>
+    </section>
+
+    <section class="section" id="realizacoes">
+      <div class="container">
+        <div class="section__header">
+          <h2>Realizações</h2>
+          <p id="achievementsSubtitle">Impacto técnico em automação, infraestrutura e suporte AV</p>
+        </div>
+        <div class="achievements-grid" id="achievementsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projetos-profissionais">
+      <div class="container">
+        <div class="section__header">
+          <h2>Projetos soluções profissionais</h2>
+          <p id="professionalProjectsSubtitle">Desenvolvimento Full-Stack / AV — clique para detalhes</p>
+        </div>
+        <div class="projects-grid" id="professionalProjectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos-gerais">
+      <div class="container">
+        <div class="section__header">
+          <h2>Projetos gerais</h2>
+          <p id="generalProjectsSubtitle">Projetos pessoais e de aprendizado — clique para detalhes</p>
+        </div>
+        <div class="projects-grid" id="generalProjectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="ferramentas">
+      <div class="container">
+        <div class="section__header">
+          <h2>Ferramentas &amp; Tecnologias</h2>
+          <p>Stack AV, produtividade e programação</p>
+        </div>
+        <div class="tools-sections" id="toolsSections"></div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close-modal aria-label="Fechar">&times;</button>
+      <div class="modal__image-wrap">
+        <img id="modalImage" src="" alt="" />
+      </div>
+      <div class="modal__body">
+        <div class="modal__title-row">
+          <div class="modal__icon" id="modalIcon" aria-hidden="true"></div>
+          <div class="modal__title-wrap">
+            <span class="modal__status" id="modalStatus"></span>
+            <h3 id="modalTitle"></h3>
+          </div>
+        </div>
+        <div class="tag-list modal__tech" id="modalTech"></div>
+        <p id="modalDescription"></p>
+        <ul class="modal__features" id="modalFeatures"></ul>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__note" id="footerNote"></p>
+      <p class="footer__copy">
+        <span id="footerName"></span> · <span id="footerYear"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
