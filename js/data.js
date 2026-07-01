@@ -259,6 +259,22 @@ const PORTFOLIO_DATA = {
       ],
     },
     {
+      id: "monitor-rede-av",
+      icon: "server",
+      title: "Monitor Rede AV",
+      tech: ["JavaScript", "HTML", "CSS", "Python"],
+      description:
+        "Monitoramento de conectividade dos equipamentos AV com testes de ping e registro de histórico para acompanhamento e troubleshooting.",
+      image: "assets/images/projetos/monitor-rede-av.png",
+      status: "ativo",
+      features: [
+        "Teste de ping nos equipamentos da rede AV",
+        "Histórico de resultados gravado para consulta",
+        "Acompanhamento contínuo da disponibilidade",
+        "Suporte à identificação de falhas de conectividade",
+      ],
+    },
+    {
       id: "calculadora-av",
       icon: "calculator",
       title: "Calculadora AV",
