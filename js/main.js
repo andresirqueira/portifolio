@@ -177,12 +177,12 @@
       ${
         hasExperience
           ? renderAboutBlock(
-              "Experiências anteriores",
+              "Experiências profissionais anteriores",
               data.previousExperience,
               "experience"
             )
           : `<div class="about-block about-block--empty reveal">
-              <h3>Experiências anteriores</h3>
+              <h3>Experiências profissionais anteriores</h3>
               <p>Adicione itens em <code>previousExperience</code> no arquivo <code>data.js</code>.</p>
             </div>`
       }

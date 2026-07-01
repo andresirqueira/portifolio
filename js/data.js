@@ -30,7 +30,7 @@ const PORTFOLIO_DATA = {
       "Projetos pessoais e de aprendizado — clique para detalhes.",
   },
 
-  // Experiências anteriores — name, logo opcional e description (breve texto)
+  // Experiências profissionais anteriores — name, logo opcional e description (breve texto)
   previousExperience: [
     { name: "Nexcode Systems", logo: "assets/images/companies/nexcode.jpg", description: "Implantação e manutenção em sistema de controle de acesso" }, 
     { name: "ADT Security", logo: "assets/images/companies/adt.png", description: "Implantação e manutenção em sistema de segurança" },
