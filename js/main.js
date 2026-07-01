@@ -584,6 +584,26 @@
 
   observeReveals();
 
+  // ---- Back to top ----
+  const backToTop = document.getElementById("backToTop");
+  if (backToTop) {
+    backToTop.innerHTML = renderIcon("chevronUp", "back-to-top__icon");
+    const showAfter = 320;
+
+    function updateBackToTop() {
+      const visible = window.scrollY > showAfter;
+      backToTop.classList.toggle("is-visible", visible);
+      backToTop.hidden = !visible;
+    }
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", updateBackToTop, { passive: true });
+    updateBackToTop();
+  }
+
   // ---- Active nav link on scroll ----
   const sections = document.querySelectorAll("section[id]");
   const navAnchors = document.querySelectorAll(".nav__links a");
